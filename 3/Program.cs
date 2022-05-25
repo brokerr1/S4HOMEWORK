@@ -5,3 +5,14 @@
 6, 1, 33 -> [6, 1, 33]
 */
 
+Console.Write("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[20];
+Random MyRandom = new Random();
+
+Console.WriteLine("Сформированный массив:");
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = MyRandom.Next(0, 20);
+    Console.Write("{0} ", array[i]);
+}
